@@ -1,5 +1,5 @@
 pipeline {
-  agent 'any' {
+  agent any
           tools { maven 'MAVEN_HOME' } 
           stages {
                   stage ( 'taking code from git ' ) 
@@ -23,5 +23,5 @@ pipeline {
                              }
                       }
                   }
-          }
+          
   }
