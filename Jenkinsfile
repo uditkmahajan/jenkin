@@ -19,7 +19,7 @@ pipeline {
                 stage ( ' deploy ') 
                       {
                         steps {
-                             sh 'cp -ivr /opt/tomcat/.jenkins/workspace/project_java_16/target/udit.war  /opt/tomcat/webapps'
+                             sh 'cp -ivr /var/lib/jenkins/workspace/code_pipline/webapp/target/webapp.war  ec2-user@54.238.139.214:8090/webapp/'
                              }
                       }
                   }
