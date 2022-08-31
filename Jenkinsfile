@@ -19,7 +19,7 @@ pipeline {
                 stage ( ' deploy ') 
                       {
                         steps {
-                             sh 'scp -ivr /var/lib/jenkins/workspace/code_pipline/webapp/target/webapp.war  ec2-user@54.238.139.214:/home/ec2-user/apache-tomcat-9.0.65/webapps/'
+                             sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/code_pipline/webapp/target/webapp.war  ec2-user@54.238.139.214:/home/ec2-user/apache-tomcat-9.0.65/webapps/'
                              }
                       }
                   }
